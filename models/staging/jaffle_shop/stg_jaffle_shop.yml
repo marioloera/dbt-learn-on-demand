@@ -20,6 +20,7 @@ models:
         description: Primary key for orders.
 
       - name: status
+        description: "{{ doc('order_status') }}"
         tests:
           - accepted_values:
               values:
