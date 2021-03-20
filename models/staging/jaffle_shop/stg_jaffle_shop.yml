@@ -1,15 +1,16 @@
 version: 2
 
 models:
+
   - name: stg_customers
-    columns: 
+    columns:
       - name: customer_id
         tests:
           - unique
           - not_null
 
   - name: stg_orders
-    columns: 
+    columns:
       - name: status
         tests:
           - accepted_values:
@@ -19,6 +20,7 @@ models:
                 - returned
                 - placed
                 - return_pending
+
       - name: customer_id
         tests:
           - relationships:
