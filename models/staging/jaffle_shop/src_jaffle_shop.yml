@@ -25,7 +25,7 @@ sources:
           error_after: {count: 50, period: day}
           # Apply a where clause in the freshness query
           filter: datediff('day', _etl_loaded_at, current_timestamp) < 10
-        
+
         columns:
 
           - name: id
