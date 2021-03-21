@@ -19,6 +19,13 @@ sources:
 
       - name: orders
         description: Raw orders data.
+        loaded_at_field: _etl_loaded_at
+        freshness:
+          warn_after: {count: 30, period: hour}
+          error_after: {count: 50, period: day}
+          # Apply a where clause in the freshness query
+          filter: datediff('day', _etl_loaded_at, current_timestamp) < 10
+        
         columns:
 
           - name: id
