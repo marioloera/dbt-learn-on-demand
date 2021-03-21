@@ -10,6 +10,7 @@ Try running the following commands:
 - dbt test -m stg_customers
 - dbt test --data
 - dbt docs generate
+- dbt source snapshot-freshness
 
 
 ### Resources:
