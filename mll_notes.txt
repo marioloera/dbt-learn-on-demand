@@ -1,0 +1,9 @@
+Version control of the complied sql?
+
+dbt code guidelines vs sql guidelines vs python
+list = [1, 2, 3]
+list = [
+    1, 
+    2, 
+    3,
+]
