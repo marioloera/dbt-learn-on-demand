@@ -1,7 +1,8 @@
 {%- set payment_methods = ['bank_transfer','credit_card','coupon','gift_card'] -%}
 
 with 
-
+{# jinja comments #}
+-- sql comments
 payments as (
    select * from {{ ref('stg_payments') }}
 ),
