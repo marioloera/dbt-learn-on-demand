@@ -11,6 +11,7 @@ Try running the following commands:
 - dbt test --data
 - dbt docs generate
 - dbt source snapshot-freshness
+- dbt deps
 
 
 ### Resources:
