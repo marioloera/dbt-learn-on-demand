@@ -1,22 +1,52 @@
 Welcome to your new dbt project!
 
-### Using the starter project
+
+
+# Using the starter project
 
 Try running the following commands:
-- dbt run
-- dbt run -m stg_payments
-- dbt run -m stg_payments+
-- dbt test
-- dbt test --schema
-- dbt test -m stg_customers
-- dbt test --data
-- dbt docs generate
-- dbt source snapshot-freshness
-- dbt deps
-- dbt run --no-version-check
-- dbt docs serve
-- http://localhost:8080
-### Resources:
+
+## run
+
+    dbt run
+    dbt run --no-version-check
+
+### run specific model
+
+    dbt run -m stg_payments
+    
+### run specific model and downstream dependencies
+
+    dbt run -m stg_payments+
+
+## test
+
+    dbt test
+    dbt test --schema
+    dbt test -m stg_customers
+    dbt test --data
+
+## sources freshneess
+
+    dbt source snapshot-freshness
+
+## build dependencies (packages)
+
+    dbt deps
+
+## seed, build data from csv
+
+   dbt seed
+
+## documents:
+
+   dbt docs generate
+
+### documents local server:
+    dbt docs serve
+    http://localhost:8080
+
+# Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
 - Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
