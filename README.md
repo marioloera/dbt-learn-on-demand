@@ -5,6 +5,7 @@ Welcome to your new dbt project!
 Try running the following commands:
 - dbt run
 - dbt run -m stg_payments
+- dbt run -m stg_payments+
 - dbt test
 - dbt test --schema
 - dbt test -m stg_customers
