@@ -42,6 +42,7 @@ Try running the following commands:
 ## compile sql code
 
     dbt compiled
+    dbt compile -m total_revenue.sql
 
 ## documents:
 
