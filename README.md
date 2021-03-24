@@ -48,6 +48,11 @@ Try running the following commands:
 
     dbt docs generate
 
+## snapshot:
+
+    dbt snapshot
+    dbt snapshot --select snap_daily_rev
+
 ### documents local server:
     dbt docs serve
     http://localhost:8080
