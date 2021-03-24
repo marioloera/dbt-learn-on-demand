@@ -38,6 +38,7 @@ Try running the following commands:
 ## seed, build data from csv
 
     dbt seed
+    dbt seed --select dim_products
 
 ## compile sql code
 

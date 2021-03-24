@@ -1,4 +1,5 @@
 product_id,name,price
-1,car,12
-2,pen,13
+1,small_car,12
+2,pen,14
 3,house,32
+4,phone,5
