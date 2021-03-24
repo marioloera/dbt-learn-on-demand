@@ -10,6 +10,7 @@ Try running the following commands:
 
     dbt run
     dbt run --no-version-check
+    dbt run --full-refresh
 
 ### run specific model
 
@@ -37,6 +38,11 @@ Try running the following commands:
 ## seed, build data from csv
 
     dbt seed
+
+## compile sql code
+
+    dbt compiled
+    dbt compile -m total_revenue.sql
 
 ## documents:
 
