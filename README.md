@@ -36,11 +36,11 @@ Try running the following commands:
 
 ## seed, build data from csv
 
-   dbt seed
+    dbt seed
 
 ## documents:
 
-   dbt docs generate
+    dbt docs generate
 
 ### documents local server:
     dbt docs serve
