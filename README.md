@@ -38,6 +38,7 @@ Try running the following commands:
 ## seed, build data from csv
 
     dbt seed
+    dbt seed --select dim_products
 
 ## compile sql code
 
@@ -47,6 +48,11 @@ Try running the following commands:
 ## documents:
 
     dbt docs generate
+
+## snapshot:
+
+    dbt snapshot
+    dbt snapshot --select snap_daily_rev
 
 ### documents local server:
     dbt docs serve
