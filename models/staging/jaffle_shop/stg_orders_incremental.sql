@@ -1,3 +1,7 @@
+{{ config(
+    materialized = 'incremental'
+) }}
+
 with orders as (
     
     select
@@ -7,6 +11,14 @@ with orders as (
         status
 
     from {{ source('jaffle_shop', 'orders') }}
+
+    {# only in the incremental loads, we use this because ref will create cyclical deps#}
+    {%- if is_incremental() %}
+    where order_date > (
+        select max(i.order_date)
+        from {{ this }} as i
+    )
+    {% endif %}
 )
 
 select * from orders
