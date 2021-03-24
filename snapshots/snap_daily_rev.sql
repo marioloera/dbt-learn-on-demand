@@ -1,4 +1,4 @@
-{% snapshot orders_snapshot %}
+{% snapshot snap_daily_rev %}
 
 {{
     config(
