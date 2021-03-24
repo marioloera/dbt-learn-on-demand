@@ -6,8 +6,8 @@
       target_schema='dbt_snapshots',
       unique_key='date',
 
-      strategy='timestamp',
-      updated_at='loaded_at',
+      strategy='check',
+      check_cols=['loaded_at']
     )
 }}
 
