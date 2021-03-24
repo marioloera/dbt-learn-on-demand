@@ -39,6 +39,10 @@ Try running the following commands:
 
     dbt seed
 
+## compile sql code
+
+    dbt compiled
+
 ## documents:
 
     dbt docs generate
