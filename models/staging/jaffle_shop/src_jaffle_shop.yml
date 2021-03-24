@@ -24,7 +24,14 @@ sources:
           warn_after: {count: 30, period: hour}
           error_after: {count: 50, period: day}
           # Apply a where clause in the freshness query
-          filter: datediff('day', _etl_loaded_at, current_timestamp) < 10
+          # generic fileter 
+          filter: _etl_loaded_at < '2021-03-22'
+
+          # snowflake
+          # filter: datediff('day', _etl_loaded_at, current_timestamp) < 10
+
+          # BigQuery: DATE_DIFF(date_expression_a, date_expression_b, date_part)
+          # filter: timestamp_diff(current_timestamp, timestamp(_etl_loaded_at), DAY) < 10
 
         columns:
 
