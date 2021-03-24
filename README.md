@@ -10,6 +10,7 @@ Try running the following commands:
 
     dbt run
     dbt run --no-version-check
+    dbt run --full-refresh
 
 ### run specific model
 
