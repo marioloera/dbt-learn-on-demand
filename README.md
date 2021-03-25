@@ -45,14 +45,14 @@ Try running the following commands:
     dbt compiled
     dbt compile -m total_revenue.sql
 
-## documents:
-
-    dbt docs generate
-
 ## snapshot:
 
     dbt snapshot
     dbt snapshot --select snap_daily_rev
+ 
+## documents:
+
+    dbt docs generate
 
 ### documents local server:
     dbt docs serve
