@@ -6,6 +6,9 @@ Welcome to your new dbt project!
 
 Try running the following commands:
 
+## check connection from profiles.yml
+
+    dbt debug
 ## run
 
     dbt run
