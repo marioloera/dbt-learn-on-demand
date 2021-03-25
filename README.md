@@ -15,10 +15,12 @@ Try running the following commands:
     dbt run --no-version-check
     dbt run --full-refresh
 
-### run specific model
+### run specific model and or package, can be a list
 
     dbt run -m stg_payments
-    
+    dbt run -m my_project
+    dbt run -m some_package
+
 ### run specific model and downstream dependencies
 
     dbt run -m stg_payments+
